@@ -11,7 +11,7 @@
 }
 
 .heading {
-  background-image: url(///https://anneloviseramstad.github.io/javascript-course-assignment//images/mountainview.webp);
+  background-image: url(/js-course-assignment-anneloviseramstad/images/mountainview.webp);
   background-size: cover;
   height: 80vh;
   position: relative;

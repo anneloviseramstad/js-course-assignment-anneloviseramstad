@@ -23,5 +23,5 @@ function applyFilters() {
   console.log("Color:", color);
   console.log("Type:", type);
 
-  // Here you can add the logic to filter your products based on the selected values.
+  //  add logic to filter your products based on the selected values.
 }
