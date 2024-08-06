@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/js-course-assignment-anneloviseramstad/css/styles.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/702cf43524.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Explore | Rainydays</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/js-course-assignment-anneloviseramstad/index.html">
+          <img
+            src="/images/logo.png"
+            alt="Image of a mountain with the text 'Rainydays' underneath."
+          />
+        </a>
+      </div>
+      <nav class="navigation">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="hamburger"></div>
+        <ul class="menu">
+          <li>
+            <a href="/js-course-assignment-anneloviseramstad/men/index.html"
+              >MEN</a
+            >
+          </li>
+          <li>
+            <a href="/js-course-assignment-anneloviseramstad/women/index.html"
+              >WOMEN</a
+            >
+          </li>
+          <li>
+            <a href="/js-course-assignment-anneloviseramstad/about/index.html"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a href="/js-course-assignment-anneloviseramstad/contact/index.html"
+              >CONTACT</a
+            >
+          </li>
+          <li>
+            <a
+              href="/js-course-assignment-anneloviseramstad/checkout/index.html"
+              >CART</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="heading-explore">
+        <div class="heading-text">
+          <h1 class="h1-explorepage">EMBRACE THE ELEMENTS WITH RAINYDAYS</h1>
+        </div>
+      </section>
+
+      <div class="filter-bar">
+        <select id="gender">
+          <option value="mens">Men</option>
+          <option value="womens">Women</option>
+        </select>
+        <select id="size">
+          <option value="xs">X-Small</option>
+          <option value="s">Small</option>
+          <option value="m">Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">X-Large</option>
+        </select>
+        <select id="color">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="purple">Purple</option>
+          <option value="grey">Grey</option>
+          <option value="brown">Brown</option>
+        </select>
+        <select id="type">
+          <option value="rain">Rain Jacket</option>
+          <option value="wind">Wind Jacket</option>
+          <option value="fleece">Fleece Jacket</option>
+          <option value="shell">Shell Jacket</option>
+        </select>
+        <button onclick="applyFilters()">Apply Filters</button>
+      </div>
+      <div class="container">
+        <h2 class="explore-h2">
+          DISCOVER THE OUTDOORS WITH OUR <i>FOREST RAIN</i> COLLECTION
+        </h2>
+        <div class="product-discover">
+          <div class="shopcards-information">
+            <img src="/images/product-men3.webp" />
+            <h4>Forest Jacket</h4>
+            <p>$320.00</p>
+          </div>
+          <div class="shopcards-information">
+            <img src="/images/product-men6.webp" />
+            <h4>Down Rainjacket</h4>
+            <p>$249.00</p>
+          </div>
+          <div class="shopcards-information">
+            <img src="/images/product-women6.webp" />
+            <h4>Mountain Jacket</h4>
+            <p>$320.00</p>
+          </div>
+        </div>
+
+        <div class="explore-text__container">
+          <div class="explore-text">
+            <h3>Engineered for Excellence</h3>
+            <p>
+              Our jackets are crafted using the latest in fabric technology and
+              innovation. Waterproof, windproof, and breathable materials ensure
+              you stay protected in any weather condition. With features like
+              adjustable hoods, ample pocket space, and ergonomic fits, you can
+              enjoy nature's beauty without compromise.
+            </p>
+          </div>
+          <img src="/images/hikers.webp" />
+          <div class="explore-text">
+            <h3>Styles for Every Explorer</h3>
+            <p>
+              Whether you’re an avid mountaineer or a casual weekend hiker, our
+              collection has something for everyone. Choose from a variety of
+              colors and designs to find a jacket that not only meets your
+              functional needs but also matches your personal style.
+            </p>
+          </div>
+          <div class="explore-inspiration">
+            <img src="/images/backpack.webp" />
+            <img src="/images/waterbottle.webp" />
+          </div>
+          <div class="explore-browse">
+            <h3>Browse Our Collection</h3>
+            <p>
+              Ready to find your perfect outdoor jacket? Explore our products
+              below and discover how Rainydays can enhance your outdoor
+              experience. Shop now and embrace the elements with confidence and
+              style!
+            </p>
+            <div class="product-discover">
+              <div class="shopcards-information">
+                <img src="/images/product-men4.webp" />
+                <h4>Forest Jacket</h4>
+                <p>$320.00</p>
+              </div>
+              <div class="shopcards-information">
+                <img src="/images/product-women2.webp" />
+                <h4>Down Rainjacket</h4>
+                <p>$249.00</p>
+              </div>
+              <div class="shopcards-information">
+                <img src="/images/product-women3.webp" />
+                <h4>Mountain Jacket</h4>
+                <p>$320.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h2>QUICK LINKS</h2>
+          <ul>
+            <li>
+              <a
+                href="/js-course-assignment-anneloviseramstad/contact/index.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="/js-course-assignment-anneloviseramstad/about/index.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="/js-course-assignment-anneloviseramstad/terms/index.html"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="/js-course-assignment-anneloviseramstad/policy/index.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>FOLLOW US</h2>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <h2>NEWSLETTER</h2>
+          <p>Sign up to our newsletter to get special offers!</p>
+          <form>
+            <input type="email" name="email" placeholder="name@example.com" />
+            <input class="subscribe-btn" type="submit" value="SUBSCRIBE" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/js-course-assignment-anneloviseramstad/css/styles.cssstyles.css"
+    />
+    <title>Checkout | Rainydays</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/js-course-assignment-anneloviseramstad/index.html">
+          <img
+            src="/images/logo.png"
+            alt="Image of a mountain with the text 'Rainydays' underneath."
+          />
+        </a>
+      </div>
+      <nav class="navigation">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="hamburger"></div>
+        <ul class="menu">
+          <li>
+            <a href="/js-course-assignment-anneloviseramstad/men/index.html"
+              >MEN</a
+            >
+          </li>
+          <li>
+            <a href="/js-course-assignment-anneloviseramstad/women/index.html"
+              >WOMEN</a
+            >
+          </li>
+          <li>
+            <a href="/js-course-assignment-anneloviseramstad/about/index.html"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a href="/js-course-assignment-anneloviseramstad/contact/index.html"
+              >CONTACT</a
+            >
+          </li>
+          <li><a href="#">CART</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <hr class="hr-header" />
+        <p class="header-info">Home > Shop > Product > Checkout</p>
+        <h1>Complete Your Order</h1>
+        <div class="order-container">
+          <div class="checkout-summary">
+            <div>
+              <h2>Product</h2>
+              <div class="product-specific">
+                <img src="/images/product-men3.webp" />
+                <div>
+                  <strong>Forest Jacket</strong>
+                  <p>Color: Black</p>
+                  <p>In Stock</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2>Size</h2>
+              <p>Large</p>
+            </div>
+            <div>
+              <h2>Quantity</h2>
+              <p>1</p>
+            </div>
+            <div>
+              <h2>Total Price</h2>
+              <strong>$320.00</strong>
+            </div>
+          </div>
+          <hr class="hr-checkout" />
+          <strong>Subtotal $320.00</strong>
+        </div>
+        <div class="shipping-payment">
+          <div class="shipping-container">
+            <form>
+              <h2>Contact Information</h2>
+              <p>Email*</p>
+              <input type="email" placeholder="name@example.com" />
+              <p>Phone</p>
+              <input type="number" placeholder="123 45 678" />
+              <h2>Delivery Address</h2>
+              <p>First Name*</p>
+              <input type="text" placeholder="Name" />
+              <p>Last Name*</p>
+              <input type="text" placeholder="Lastname" />
+              <p>Street Address*</p>
+              <input type="text" placeholder="Storgata 15" />
+              <p>Postcode*</p>
+              <input type="number" placeholder="1234" />
+              <p>City*</p>
+              <input type="text" placeholder="Oslo" />
+              <p>Country</p>
+              <input type="text" placeholder="Norway" />
+              <p>*Required Fields</p>
+            </form>
+          </div>
+          <div class="payment-container">
+            <h2>Choose Payment</h2>
+            <div>
+              <input
+                type="radio"
+                id="payment1"
+                name="payment1"
+                value="Paypal"
+              />
+              <label for="payment1">Paypal</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="payment2"
+                name="payment2"
+                value="Creditcard"
+              />
+              <label for="payment1">Creditcard</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="payment3"
+                name="payment3"
+                value="Klarna"
+              /><label for="payment1">Klarna</label>
+            </div>
+            <form>
+              <p>Card Number*</p>
+              <input type="number" placeholder="1234 **** **** ****" />
+              <h2>Expedition Date*</h2>
+
+              <input
+                type="date"
+                name="date"
+                id="date"
+                class="form-input"
+                required
+              />
+              <p>CVV*</p>
+              <input
+                type="text"
+                name="cvv"
+                id="cvv"
+                inputmode="numeric"
+                class="form-input"
+                required
+                placeholder="123"
+              />
+              <p>Discount Code</p>
+              <input type="text" placeholder="****" />
+              <p>*Required Fields</p>
+            </form>
+            <div class="summary-container">
+              <div>
+                <p>1x Forest Jacket</p>
+                <p>Subtotal</p>
+                <p>Shipping</p>
+                <p>TOTAL</p>
+              </div>
+              <div>
+                <p>$ 320.00</p>
+                <p>$ 320.00</p>
+                <p>FREE</p>
+                <strong>$ 320.00</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h2>QUICK LINKS</h2>
+          <ul>
+            <li>
+              <a
+                href="/js-course-assignment-anneloviseramstad/contact/index.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="/js-course-assignment-anneloviseramstad/about/index.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="/js-course-assignment-anneloviseramstad/terms/index.html"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="/js-course-assignment-anneloviseramstad/policy/index.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>FOLLOW US</h2>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <h2>NEWSLETTER</h2>
+          <p>Sign up to our newsletter to get special offers!</p>
+          <form>
+            <input type="email" name="email" placeholder="name@example.com" />
+            <input class="subscribe-btn" type="submit" value="SUBSCRIBE" />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+.h1-homepage {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.h2-homepage {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.heading {
+  background-image: url(///https://anneloviseramstad.github.io/javascript-course-assignment//images/mountainview.webp);
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  text-align: center;
+}
+
+.heading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.explore-btn {
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+}
+
+.shopcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  row-gap: 56px;
+  margin-bottom: 64px;
+}
+
+.shopcards h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.shopcards-information > * {
+  margin: 4px 0;
+}
+
+.h3-shop {
+  font-size: 24px;
+  color: #0a3641;
+  text-align: center;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: rgba(217, 217, 217, 0.23);
+  padding: 0 40px;
+}
+
+.discount-number {
+  font-size: 80px;
+  color: #0a3641;
+  font-weight: 800;
+}
+
+.discount-information {
+  color: #0a3641;
+  font-size: 24px;
+}
+
+.slogan h4 {
+  color: rgba(0, 0, 0, 0.49);
+}
+
+.slogan p {
+  color: #0a3641;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 100px;
+  text-align: center;
+  padding: 0 100px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #c8c8c8;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 10px 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: Change button appearance on hover */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

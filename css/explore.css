@@ -1,0 +1,93 @@
+.heading-explore {
+  background-image: url(/images/hikers2.webp);
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  text-align: center;
+}
+
+.heading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.h1-explorepage {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.explore-h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 24px;
+  text-decoration: underline;
+}
+
+.filter-bar {
+  text-align: center;
+}
+
+.filter-bar {
+  padding: 16px;
+  background-color: #f9f9f9;
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.filter-bar select,
+.filter-bar button {
+  font-family: "Montserrat";
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.filter-bar button {
+  background-color: #24505b;
+  color: white;
+  border: none;
+}
+
+.filter-bar button:hover {
+  background-color: #193b44;
+}
+
+.product-discover {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.explore-text__container {
+  margin: 64px 0;
+  display: grid;
+  gap: 40px;
+}
+
+.explore-text {
+  background-color: #f9f9f9;
+  padding: 24px;
+}
+
+.explore-text h3 {
+  color: #24505b;
+}
+
+.explore-inspiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.explore-browse {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+.order-container,
+.shipping-container,
+.payment-container,
+.summary-container {
+  background-color: #f3f3f3;
+  padding: 36px;
+  margin: 40px 0;
+}
+
+.checkout-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.checkout-summary img {
+  width: 50%;
+}
+
+.checkout-summary h2 {
+  margin-top: 0;
+}
+
+.product-specific {
+  display: flex;
+  gap: 12px;
+}
+
+.hr-checkout {
+  margin: 24px 0;
+}
+
+.shipping-payment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.summary-container {
+  display: flex;
+  gap: 56px;
+}
