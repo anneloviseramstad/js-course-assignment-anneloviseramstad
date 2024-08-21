@@ -44,3 +44,8 @@
   display: flex;
   gap: 56px;
 }
+
+.order-confirmed {
+  text-align: center;
+  padding: 50px;
+}

@@ -7,14 +7,14 @@
       rel="stylesheet"
       href="/js-course-assignment-anneloviseramstad/css/styles.css"
     />
-    <title>Document</title>
+    <title>My Profile | Rainydays</title>
   </head>
   <body>
     <header>
       <div class="logo">
         <a href="/js-course-assignment-anneloviseramstad/index.html">
           <img
-            src="images/logo.png"
+            src="/js-course-assignment-anneloviseramstad/images/logo.png"
             alt="Image of a mountain with the text 'Rainydays' underneath."
           />
         </a>
@@ -49,10 +49,72 @@
               >CART</a
             >
           </li>
+          <div id="loginSection">
+            <button id="loginBtn">LOG IN</button>
+            <button id="logoutBtn">LOG OUT</button>
+            <div id="welcomeMsg"></div>
+          </div>
+          <div id="loginForm">
+            Username: <input type="text" id="username" /> Password:
+            <input type="password" id="password" />
+            <button onclick="login()">Log In</button>
+          </div>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="container">
+        <hr class="hr-header" />
+        <p class="header-info">Home > My Profile</p>
+        <h1>My Profile</h1>
+        <p>
+          Welcome, [Username]! Manage your profile information, preferences, and
+          security settings. Keep your details up to date to ensure a smooth
+          shopping experience.
+        </p>
+        <div class="profile">
+          <div>
+            <h2>Profile Information</h2>
+            <ul>
+              <li>Full Name:</li>
+              <li>Email Address:</li>
+              <li>Phone Number:</li>
+              <li>Birthday:</li>
+            </ul>
+
+            <h2>Manage Addresses</h2>
+            <ul>
+              <li>Primary Address:</li>
+              <li>Billing Address:</li>
+              <li>Add New Address:</li>
+            </ul>
+            <h2>Order History</h2>
+            <ul>
+              <li>
+                View your recent orders, track shipping, and manage returns.
+              </li>
+              <li>View Orders</li>
+            </ul>
+            <h2>Payment Methods</h2>
+            <ul>
+              <li>Add or remove payment methods for quick checkouts.</li>
+              <li>Manage Payment Methods</li>
+            </ul>
+            <h2>Account Settings</h2>
+            <ul>
+              <li>Change Password (Change)</li>
+              <li>Email Preferences: (edit)</li>
+              <li>Deactivate Account (Request Deactivation)</li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="/js-course-assignment-anneloviseramstad/images/profile.webp"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer-content">
         <div>
@@ -101,5 +163,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js-course-assignment-anneloviseramstad/js/scripts.js"></script>
   </body>
 </html>

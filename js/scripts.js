@@ -25,3 +25,46 @@ function applyFilters() {
 
   //  add logic to filter your products based on the selected values.
 }
+
+document.getElementById("loginBtn").addEventListener("click", function () {
+  document.getElementById("loginForm").style.display = "block";
+  document.getElementById("loginBtn").style.display = "none";
+});
+
+function login() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  if (username === "username" && password === "password") {
+    localStorage.setItem("loggedIn", true);
+    updateLoginState();
+  } else {
+    alert("Username or password is incorrect. Please try again.");
+  }
+}
+
+function logout() {
+  localStorage.removeItem("loggedIn");
+  updateLoginState();
+}
+
+document.getElementById("logoutBtn").addEventListener("click", logout);
+
+function updateLoginState() {
+  if (localStorage.getItem("loggedIn")) {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("loginBtn").style.display = "none";
+    document.getElementById("logoutBtn").style.display = "inline";
+    document.getElementById("welcomeMsg").style.display = "block";
+    document.getElementById("welcomeMsg").innerHTML = "PROFILE";
+  } else {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("loginBtn").style.display = "inline";
+    document.getElementById("logoutBtn").style.display = "none";
+    document.getElementById("welcomeMsg").style.display = "none";
+  }
+}
+
+window.onload = function () {
+  updateLoginState();
+};
