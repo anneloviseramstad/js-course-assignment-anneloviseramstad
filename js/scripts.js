@@ -1,15 +1,35 @@
-document.querySelectorAll("#sizeOptions a").forEach((item) => {
-  item.addEventListener("click", function (event) {
-    // Prevent the default link behavior
-    event.preventDefault();
+let cart = [];
 
-    // Get the data-size attribute from the clicked link
-    var size = this.getAttribute("data-size");
-
-    // Update the button's text to show the selected size
-    document.getElementById("sizeButton").textContent = size;
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  fetchProducts();
 });
+
+async function fetchProducts() {
+  try {
+    const response = await fetch("https://api.noroff.dev/api/v1/rainy-days/");
+    const products = await response.json();
+    displayProducts(products);
+  } catch (error) {
+    console.error("Failed to upload.", error);
+  }
+}
+
+function displayProducts(products) {
+  const container = document.getElementById("products");
+  products.forEach((product) => {
+    const productDiv = document.createElement("div");
+    productDiv.classname = "product.item";
+    productDiv.innerHTML = `
+            <img src="${product.image}" alt="Image of ${product.title}">
+            <h2>${product.title}</h2>
+            <p>${product.description}</p>
+            <p>Price: ${product.price} kr</p>
+            <p>On Sale: ${product.discountedPrice} kr</p>
+        `;
+    productDiv.dataset.productId = product.id;
+    container.appendChild(productDiv);
+  });
+}
 
 function applyFilters() {
   const gender = document.getElementById("gender").value;
@@ -30,6 +50,8 @@ document.getElementById("loginBtn").addEventListener("click", function () {
   document.getElementById("loginForm").style.display = "block";
   document.getElementById("loginBtn").style.display = "none";
 });
+
+// LOGIN button
 
 function login() {
   const username = document.getElementById("username").value;
